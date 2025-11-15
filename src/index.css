@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px; /* Base font size */
+}
+
+body {
+  @apply text-gray-900 bg-gray-50;
+  font-size: 1.125rem; /* Increase base font size by 2px */
+}
+
+@layer base {
+  /* Increase navigation font size */
+  nav {
+    font-size: 1.125rem;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-[#0085cc] text-white hover:bg-[#006ba3];
+  }
+  
+  .btn-outline {
+    @apply border-2 border-current hover:bg-[#0085cc] hover:text-white;
+  }
+
+  /* Add checkmark styles */
+  .feature-list li {
+    @apply flex items-start gap-2;
+  }
+
+  .feature-list li::before {
+    content: "✓";
+    @apply text-green-600 font-bold;
+  }
+}

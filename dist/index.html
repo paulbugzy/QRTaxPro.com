@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link rel="manifest" href="/manifest.json" />-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="QRTaxPro" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <title>QRTaxPro | Software &amp; Products for Tax Professionals</title>
+
+    <!-- Critical CSS -->
+    <style>
+      body {
+        margin: 0;
+        background: #f3f4f6;
+      }
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #f3f4f6;
+      }
+      .loading::after {
+        content: '';
+        width: 32px;
+        height: 32px;
+        border: 4px solid #2563eb;
+        border-right-color: transparent;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Preload key assets -->
+    <link rel="preload" href="data:text/javascript;base64,Ly8gVmVuZG9yIGJ1bmRsZSBjb250YWluaW5nIGNyaXRpY2FsIGRlcGVuZGVuY2llcwppbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnOwppbXBvcnQgUmVhY3RET00gZnJvbSAncmVhY3QtZG9tJzsKaW1wb3J0IHsgQnJvd3NlclJvdXRlciB9IGZyb20gJ3JlYWN0LXJvdXRlci1kb20nOwppbXBvcnQgeyBtb3Rpb24sIEFuaW1hdGVQcmVzZW5jZSB9IGZyb20gJ2ZyYW1lci1tb3Rpb24nOwoKLy8gSW5pdGlhbGl6ZSBwZXJmb3JtYW5jZSBtb25pdG9yaW5nCmlmIChwcm9jZXNzLmVudi5OT0RFX0VOViA9PT0gJ3Byb2R1Y3Rpb24nKSB7CiAgdHJ5IHsKICAgIC8vIFdlYiBWaXRhbHMgbW9uaXRvcmluZwogICAgY29uc3QgcmVwb3J0V2ViVml0YWxzID0gKHsgaWQsIG5hbWUsIHZhbHVlIH0pID0+IHsKICAgICAgd2luZG93Lmd0YWc/LignZXZlbnQnLCBuYW1lLCB7CiAgICAgICAgZXZlbnRfY2F0ZWdvcnk6ICdXZWIgVml0YWxzJywKICAgICAgICBldmVudF9sYWJlbDogaWQsCiAgICAgICAgdmFsdWU6IE1hdGgucm91bmQobmFtZSA9PT0gJ0NMUycgPyB2YWx1ZSAqIDEwMDAgOiB2YWx1ZSksCiAgICAgICAgbm9uX2ludGVyYWN0aW9uOiB0cnVlLAogICAgICB9KTsKICAgIH07CgogICAgLy8gTG9hZCBwZXJmb3JtYW5jZSBtb25pdG9yaW5nCiAgICBpbXBvcnQoJ3dlYi12aXRhbHMnKS50aGVuKCh7IGdldENMUywgZ2V0RklELCBnZXRGQ1AsIGdldExDUCwgZ2V0VFRGQiB9KSA9PiB7CiAgICAgIGdldENMUyhyZXBvcnRXZWJWaXRhbHMpOwogICAgICBnZXRGSUQocmVwb3J0V2ViVml0YWxzKTsKICAgICAgZ2V0RkNQKHJlcG9ydFdlYlZpdGFscyk7CiAgICAgIGdldExDUChyZXBvcnRXZWJWaXRhbHMpOwogICAgICBnZXRUVEZCKHJlcG9ydFdlYlZpdGFscyk7CiAgICB9KTsKICB9IGNhdGNoIChlcnIpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ0Vycm9yIGluaXRpYWxpemluZyBwZXJmb3JtYW5jZSBtb25pdG9yaW5nOicsIGVycik7CiAgfQp9CgovLyBFeHBvcnQgY29tbW9ubHkgdXNlZCB2ZW5kb3IgbW9kdWxlcwpleHBvcnQgewogIFJlYWN0LAogIFJlYWN0RE9NLAogIEJyb3dzZXJSb3V0ZXIsCiAgbW90aW9uLAogIEFuaW1hdGVQcmVzZW5jZQp9Ow==" as="script" />
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://managemytaxbusiness.com" />
+    <link rel="dns-prefetch" href="https://managemytaxbusiness.com" />
+    <script type="module" crossorigin src="/assets/index-zSqKQBYH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CCtcxfDj.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+  <body>
+    <div id="root">
+      <div class="loading" aria-label="Loading..."></div>
+    </div>
+  </body>
+</html>

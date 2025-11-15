@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": "97bff1ef-0e60-4476-9139-cc952cf3d685",
+      "email": "support@qrtaxpro.com",
+      "password": "$2a$10$8VOA8q.i.AkUz.4rOr4PQeFG.AaQecofBY193hQ0gCmtW.HA7XKSu",
+      "name": "Admin",
+      "role": "ADMIN",
+      "createdAt": "2024-12-07T12:37:34.040Z",
+      "updatedAt": "2024-12-07T12:37:34.040Z"
+    }
+  ],
+  "pages": [
+    {
+      "id": "1",
+      "title": "Home",
+      "slug": "/",
+      "content": "Welcome to QRTaxPro",
+      "published": true,
+      "createdAt": "2024-03-07T12:00:00.000Z",
+      "updatedAt": "2024-03-07T12:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "title": "About Us",
+      "slug": "/about",
+      "content": "Learn about our company",
+      "published": true,
+      "createdAt": "2024-03-07T12:00:00.000Z",
+      "updatedAt": "2024-03-07T12:00:00.000Z"
+    }
+  ],
+  "menuItems": [
+    {
+      "id": "1",
+      "title": "Home",
+      "path": "/",
+      "order": 1
+    },
+    {
+      "id": "2",
+      "title": "Services",
+      "path": "/services",
+      "order": 2
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Tax Software",
+      "slug": "tax-software",
+      "description": "Software and Products for Tax Professionals",
+      "categoryId": "1"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "title": "Bank Products",
+      "slug": "bank-products",
+      "description": "Bank Products"
+    }
+  ],
+  "locations": [
+    {
+      "id": "1",
+      "name": "Chicago",
+      "slug": "chicago",
+      "description": "Serving the Chicago area",
+      "zipCodes": ["60601", "60602"]
+    }
+  ]
+}
