@@ -29,54 +29,25 @@ model Page {
 }
 
 model MenuItem {
-  id       String     @id @default(uuid())
-  title    String
-  path     String
-  order    Int
-  parentId String?
-  parent   MenuItem?  @relation("MenuItemToMenuItem", fields: [parentId], references: [id])
-  children MenuItem[] @relation("MenuItemToMenuItem")
-}
-
-model Service {
-  id          String   @id @default(uuid())
-  title       String
-  slug        String   @unique
-  description String
-  content     String
-  image       String
-  categoryId  String
-  category    Category @relation(fields: [categoryId], references: [id])
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-}
-
-model Category {
-  id          String    @id @default(uuid())
-  title       String
-  slug        String    @unique
-  description String
-  services    Service[]
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-}
-
-model Location {
-  id          String   @id @default(uuid())
-  name        String
-  slug        String   @unique
-  description String
-  image       String
-  landmarks   String[]
-  zipCodes    String[]
-  lat         Float
-  lng         Float
-  wikiUrl     String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id        String        @id @default(uuid())
+  title     String
+  path      String
+  order     Int
+  external  Boolean       @default(false)
+  placement MenuPlacement @default(HEADER)
+  parentId  String?
+  parent    MenuItem?     @relation("MenuItemToMenuItem", fields: [parentId], references: [id])
+  children  MenuItem[]    @relation("MenuItemToMenuItem")
 }
 
 enum Role {
   ADMIN
   EDITOR
+}
+
+enum MenuPlacement {
+  HEADER
+  HEADER_MOBILE
+  FOOTER
+  FOOTER_MOBILE
 }
